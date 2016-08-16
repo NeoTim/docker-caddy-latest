@@ -13,4 +13,4 @@ RUN cd /go/src/app/caddy && go get ./...
 # Run included build script
 RUN /go/src/app/caddy/build.bash /bin/caddy
 # Execute /bin/caddy
-CMD ["caddy"]
+CMD ["caddy", "--conf", "/etc/Caddyfile"]
